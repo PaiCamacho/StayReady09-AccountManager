@@ -26,11 +26,11 @@ public abstract class BankAccount {
 
     public abstract void withdrawMoney(Double amount);
 
-    protected Boolean getStatus(){
+    public Boolean getStatus(){
         return this.isActive;
     }
 
-    protected void closeAccount(){
+    public void closeAccount(){
         this.isActive = false;
         this.accountBalance = 0.0;
         this.accountFee = 0.0;
